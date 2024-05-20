@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CalcoloParallelo {
     public static void main(String[] args) throws Exception {
-        System.out.println("Deco calcolare:" + " ");
+        System.out.println("Devo calcolare x1 e x2 per la risoluzione delle equazioni di secondo grado");
         double a,b,c;
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("\nInserisci a: ");
@@ -23,6 +23,5 @@ public class CalcoloParallelo {
         thr2.start();
         thr2.join();
         thr3.start();
-        thr4.start();
     }
 }
