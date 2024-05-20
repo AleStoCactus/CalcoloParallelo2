@@ -14,7 +14,15 @@ public class CalcoloParallelo {
         }
 
         Buffer parziali = new Buffer(a,b,c);
-        Operazione thr1 = new Operazione(parziali);
+        Op1 thr1 = new Op1(parziali);
+        Op1 thr2 = new Op1(parziali);
+        Op1 thr3 = new Op1(parziali);
+        Op1 thr4 = new Op1(parziali);
+
         thr1.start();
+        thr2.start();
+        thr2.join();
+        thr3.start();
+        thr4.start();
     }
 }
